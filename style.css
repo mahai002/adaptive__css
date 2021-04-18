@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body { 
+    background: rgb(75, 75, 75);
+    color: white;
+    font-family: Arial;
+}
+
+.container {
+    /* max-width: 1100px; */
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.adaptive {
+    /* padding: 50px; */
+    padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1600 - 320)));
+}
+
+.item {
+    padding: 40px 30px;
+    /* margin-bottom : 50px; */
+    margin-bottom: calc(20px + (50 - 20)*((100vw - 320px) / (1600 - 320)));
+}
+
+.item__title {
+    font-weight: 400;
+    line-height: 130%;
+    /* font-size: 30px;
+    margin-bottom: 20px; */
+    font-size: calc(20px + (30 - 20)*((100vw - 320px) / (1600 - 320)));
+    margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320)));
+}
+
+.item__text {
+    line-height: 150%;
+    /* font-size: 16px; */
+    font-size: calc(12px + (16 - 12)*((100vw - 320px) / (1600 - 320)));
+}
+
+
+
+.item:nth-child(1) {
+    background: #794f45;
+}
+.item:nth-child(2) {
+    background: #77608d;
+}
+.item:nth-child(3) {
+    background: #7a956b;
+}
+
+
+
+/* @media(max-width:1100px) {
+    .adaptive {
+        padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1100 - 320)));
+    }
+
+    .item__title {
+        font-size: calc(20px + (30 - 20)*((100vw - 320px) / (1100 - 320)));
+        margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1100 - 320)));
+    }
+
+    .item {
+        margin-bottom: calc(20px + (50 - 20)*((100vw - 320px) / (1100 - 320)));
+    }
+
+    .item__text {
+        font-size: calc(12px + (16 - 12)*((100vw - 320px) / (1100 - 320)));
+    }
+} */
+
+/* 
+@media(min-width:1600px) {
+    .adaptive {
+        padding: calc(20px + (50 - 20) * ((100vw - 320px) / (1600 - 320)));
+    }
+
+    .item__title {
+        font-size: calc(20px + (30 - 20)*((100vw - 320px) / (1600 - 320)));
+        margin-bottom: calc(10px + (20 - 10) * ((100vw - 320px) / (1600 - 320)));
+    }
+
+    .item {
+        margin-bottom: calc(20px + (50 - 20)*((100vw - 320px) / (1600 - 320)));
+    }
+
+    .item__text {
+        font-size: calc(12px + (16 - 12)*((100vw - 320px) / (1600 - 320)));
+    }
+} 
+*/
